@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1F46E94-5DC2-4FC5-C8FB-516C9060CAA9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>5.5.1f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PlaymodeTestsRunner">
+      <HintPath>Library\UnityAssemblies\UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <HintPath>Assets\Network\System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="BestHTTP">
+      <HintPath>Assets\Plugins\BestHTTP.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="EvolveWar.Plugins.csproj">
+      <Project>{F420BED7-E119-C669-C480-730ED7CB93F9}</Project>
+      <Name>EvolveWar.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\EvolveWar\Data\CollectionContainer\TalentSettingsCollectionContainer.cs" />
+    <Compile Include="Assets\EvolveWar\Data\Config.cs" />
+    <Compile Include="Assets\EvolveWar\Data\SDKManager.cs" />
+    <Compile Include="Assets\EvolveWar\Data\Settings\NickNameCollection.cs" />
+    <Compile Include="Assets\EvolveWar\Data\Settings\Player\PlayerSettings.cs" />
+    <Compile Include="Assets\EvolveWar\Data\Settings\Player\PlayerSettingsCollection.cs" />
+    <Compile Include="Assets\EvolveWar\Data\Settings\Skill\SkillSettings.cs" />
+    <Compile Include="Assets\EvolveWar\Data\Settings\Skill\SkillSettingsCollection.cs" />
+    <Compile Include="Assets\EvolveWar\Data\Settings\Talent\TalentSettings.cs" />
+    <Compile Include="Assets\EvolveWar\Data\Settings\Talent\TalentSettingsCollection.cs" />
+    <Compile Include="Assets\EvolveWar\Data\Temp.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Account.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Save.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\Battle\BattlePlayerInfo.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\PlayerStatus.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Battle\BattleClearReq.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Battle\BattleClearRes.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Battle\BattleStartReq.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Battle\BattleStartRes.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Login\LoginRes.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Login\SetNickNameRes.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Rank\GetRankingListRes.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Role\RechargeRes.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Talent\TalentLevelUpReq.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Talent\TalentLevelUpRes.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Talent\TalentResetRes.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\Talent\TalentStatus.cs" />
+    <Compile Include="Assets\EvolveWar\Models\Shared\Talent\TalentStatusCollection.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\BattleEvent\DestroyUnitInfo.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Components\Camera\FollowCamera.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Components\DestroyPoint.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Components\Joystick.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Components\RandomShowPoint.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Protocols\GameProtocol.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Protocols\RequestHelper\GameRequestHelper.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\BattleScene.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Component\FxHandler.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Food\Food.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Food\FoodBlood.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Food\FoodBox.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Food\FoodExp.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Generate\GenerateFood.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\State\AIState.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\State\AttackState.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\State\BypassState.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\State\FindFoodState.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\State\IdleState.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\State\SearchAttackState.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\AIMoveAbility.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\Ability.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\AutoAttackAbility.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\ClothingAbility.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\CollisionFilterAbility.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\EatAbility.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\IAbility.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\InputAbility.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\MoveAbility.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\ShowIndentifyAbility.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\AttackEffect.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\BattleUnit.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Sound\BGSoundPlayer.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Sound\EffectSoundMgr.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Sound\EffectSoundPlayer.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\BattlePanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\BattleQuitPanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\BattleResultPanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\AttackColliderFillter.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\BloodEffect.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\HpBar.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\NumberShow.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\RankBlock.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\RankNumShow.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\SkillBlock.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\TalentBlock.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\TalentSimpleBlock.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\UIFxHandler.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\DialogPanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\GiftPanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\LoginPanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\NetWaitPanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\NickNamePanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\RankingPanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\RechargeSuccessPanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\RevivePanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\RoleDetailsPanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\RolePanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\SettingsPanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\UI\TalentPanel.cs" />
+    <Compile Include="Assets\EvolveWar\Scripts\Utility\Utility.cs" />
+    <Compile Include="Assets\Kit\Scripts\Attributes\HarunaInspect.cs" />
+    <Compile Include="Assets\Kit\Scripts\Attributes\InspectorButton.cs" />
+    <Compile Include="Assets\Kit\Scripts\Attributes\InspectorSpace.cs" />
+    <Compile Include="Assets\Kit\Scripts\Attributes\TypeSelector.cs" />
+    <Compile Include="Assets\Kit\Scripts\GameEvent\AbstractGameEventManager.cs" />
+    <Compile Include="Assets\Kit\Scripts\GameEvent\GlobalEventManager.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeConcurrentChildren.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoAnimatorControl.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoAnimatorSpeedControl.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoAudioLinearFadeOut.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoCallFunction.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoCanvasGroupFade.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoCanvasGroupFadeCallback.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoDestroyGameObject.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoFadeChildren.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoObjectActivate.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoRotateStay.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoRotateY.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoScaleStay.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoSinScaleX.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoSliderMove.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoTimeElapsed.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoTimeScaleCurve.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoTimeScalePause.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoTimeScaleResume.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoToggle.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoUIButtonActive.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoUIChangeSizeDelta.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoUIMoveTo.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoUISetImageSprite.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoUIShake.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoUITextNumberChange.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeDo\PeDoUITextScaleY.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeNode.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeRoot.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeSequenceChildren.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeUtil\PeUntilObjectEnter.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeUtil\PeUntilTimeElapsed.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\PeUtil\PeUntilTriggerEnter.cs" />
+    <Compile Include="Assets\Kit\Scripts\Performance\SpecifyTarget.cs" />
+    <Compile Include="Assets\Kit\Scripts\UI\BasePanel.cs" />
+    <Compile Include="Assets\Kit\Scripts\UI\ListMemberUpdater.cs" />
+    <Compile Include="Assets\Kit\Scripts\UI\MainUI.cs" />
+    <Compile Include="Assets\Kit\Scripts\UI\ToggleStatus.cs" />
+    <Compile Include="Assets\Kit\Scripts\Utility\ISerializeToJson.cs" />
+    <Compile Include="Assets\Kit\Scripts\Utility\IgnoreUnityObjectContractResolver.cs" />
+    <Compile Include="Assets\Kit\Scripts\Utility\OpenXml\ExcelCell.cs" />
+    <Compile Include="Assets\Kit\Scripts\Utility\OpenXml\ExcelRow.cs" />
+    <Compile Include="Assets\Kit\Scripts\Utility\OpenXml\ExcelSheet.cs" />
+    <Compile Include="Assets\Kit\Scripts\Utility\OpenXml\Extend.cs" />
+    <Compile Include="Assets\Kit\Scripts\Utility\OpenXml\OpenXmlParser.cs" />
+    <Compile Include="Assets\Kit\Scripts\Utility\OpenXml\Parser\ObjectParser.cs" />
+    <Compile Include="Assets\Kit\Scripts\Utility\OpenXml\Parser\ParseProvider.cs" />
+    <Compile Include="Assets\Kit\Scripts\Utility\OpenXml\Parser\ParseSettings.cs" />
+    <Compile Include="Assets\Kit\Scripts\Utility\RandamUtility.cs" />
+    <Compile Include="Assets\Kit\Scripts\Utility\ScrollCircle.cs" />
+    <Compile Include="Assets\Kit\Scripts\Utility\UtilitySerializeHelper.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\HTTP\AssetBundleSample.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\HTTP\LargeFileDownloadSample.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\HTTP\TextureDownloadSample.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\HTTP\UploadStream.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\Helpers\CodeBlocks.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\Helpers\GUIHelper.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\LitJson\IJsonWrapper.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\LitJson\JsonData.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\LitJson\JsonException.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\LitJson\JsonMapper.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\LitJson\JsonMockWrapper.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\LitJson\JsonReader.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\LitJson\JsonWriter.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\LitJson\Lexer.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\LitJson\ParserToken.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\Plugin\CacheMaintenanceSample.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\SampleSelector.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\SignalR\Authentication Providers\SampleCookieAuthentication.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\SignalR\Authentication Providers\SampleHeaderAuthentication.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\SignalR\AuthenticationSample.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\SignalR\ConnectionAPISample.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\SignalR\ConnectionStatusSample.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\SignalR\DemoHubSample.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\SignalR\Json Encoders\LitJsonEncoder.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\SignalR\SimpleStreamingSample.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\SocketIO\SocketIO Json Encoders\JsonDotNetEncoder.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\SocketIO\SocketIO Json Encoders\LitJsonEncoder.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\SocketIO\SocketIOChatSample.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\SocketIO\SocketIOWePlaySample.cs" />
+    <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\Websocket\WebSocketSample.cs" />
+    <Compile Include="Assets\Network\CustomCode.cs" />
+    <Compile Include="Assets\Network\DownloadProtocol.cs" />
+    <Compile Include="Assets\Network\Http\HttpClient.cs" />
+    <Compile Include="Assets\Network\Http\HttpErrorExcetion.cs" />
+    <Compile Include="Assets\Network\Http\HttpWebRequestInfo.cs" />
+    <Compile Include="Assets\Network\Http\HttpWebRequestPoster.cs" />
+    <Compile Include="Assets\Network\Http\HttpWebRequestUtility.cs" />
+    <Compile Include="Assets\Network\Http\Protocols\ConnectServerAttribute.cs" />
+    <Compile Include="Assets\Network\Http\Protocols\DontCheckTokenAttribute.cs" />
+    <Compile Include="Assets\Network\Http\Protocols\Protocol.cs" />
+    <Compile Include="Assets\Network\Http\Protocols\ProtocolManager.cs" />
+    <Compile Include="Assets\Network\JsonConditionIgnoreContractResolver.cs" />
+    <Compile Include="Assets\Network\JsonConverter\AbstractCustomBinaryConverter.cs" />
+    <Compile Include="Assets\Network\JsonConverter\CustomDateTimeConverter.cs" />
+    <Compile Include="Assets\Network\JsonInterfaceBinder.cs" />
+    <Compile Include="Assets\Network\JsonUtilNet.cs" />
+    <Compile Include="Assets\Network\NetworkUtil.cs" />
+    <Compile Include="Assets\Network\Validator.cs" />
+    <Compile Include="Assets\TalkingDataScripts\TDGAAccount.cs" />
+    <Compile Include="Assets\TalkingDataScripts\TDGAItem.cs" />
+    <Compile Include="Assets\TalkingDataScripts\TDGAMission.cs" />
+    <Compile Include="Assets\TalkingDataScripts\TDGAVirtualCurrency.cs" />
+    <Compile Include="Assets\TalkingDataScripts\TalkingDataDemoScript.cs" />
+    <Compile Include="Assets\TalkingDataScripts\TalkingDataGA.cs" />
+    <Compile Include="Assets\Test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\EvolveWar\Excel\Xml\NickName.xml" />
+    <None Include="Assets\EvolveWar\Excel\Xml\PlayerSettings.xml" />
+    <None Include="Assets\EvolveWar\Excel\Xml\SkillSettings.xml" />
+    <None Include="Assets\EvolveWar\Excel\Xml\TalentSettings.xml" />
+    <None Include="Assets\JsonDotNet\Assemblies\AOT\Newtonsoft.Json.XML" />
+    <None Include="Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.XML" />
+    <None Include="Assets\JsonDotNet\Assemblies\Windows\Newtonsoft.Json.XML" />
+    <None Include="Assets\JsonDotNet\ReadMe.txt" />
+    <None Include="Assets\JsonDotNet\link.xml" />
+    <None Include="Assets\Kit\Scripts\Performance\readme.txt" />
+    <None Include="Assets\Kit\Shader\Depth.shader" />
+    <None Include="Assets\Kit\Shader\SpriteMask.shader" />
+    <None Include="Assets\Kit\Shader\SupportTiling.shader" />
+    <None Include="Assets\Network\Best HTTP (Basic)\ReleaseNotes.txt" />
+    <None Include="Assets\Network\Best HTTP (Basic)\link.xml" />
+    <None Include="Assets\Network\Best HTTP (Basic)\link_android_subset.xml" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\WhiteCat\ReadMe.txt" />
+    <None Include="Assets\UVOffset.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>

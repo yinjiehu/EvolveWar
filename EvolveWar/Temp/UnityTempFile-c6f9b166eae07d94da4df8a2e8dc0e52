@@ -1,0 +1,241 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/Assembly-CSharp-firstpass.dll
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll"
+-r:Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll
+-r:Assets/Network/System.ComponentModel.DataAnnotations.dll
+-r:Assets/Plugins/BestHTTP.dll
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_5_1
+-define:UNITY_5_5
+-define:UNITY_5
+-define:UNITY_ANALYTICS
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_GENERICS
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:PLATFORM_SUPPORTS_MONO
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_SCRIPTING_NEW_CSHARP_COMPILER
+-define:UNITY_ANDROID
+-define:ENABLE_SUBSTANCE
+-define:UNITY_ANDROID_API
+-define:ENABLE_EGL
+-define:ENABLE_NETWORK
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:PLATFORM_SUPPORTS_ADS_ID
+-define:UNITY_CAN_SHOW_SPLASH_SCREEN
+-define:ENABLE_VIDEO
+-define:ENABLE_VR
+-define:ENABLE_UNITYADS_RUNTIME
+-define:UNITY_UNITYADS_API
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+-define:UNITY_PRO_LICENSE
+Assets/Plugins/WhiteCat/EditorAssets/EditorAssets.cs
+"Assets/Plugins/WhiteCat/Examples/Example Assets/Scripts/BuildMeshAlongPath.cs"
+"Assets/Plugins/WhiteCat/Examples/Example Assets/Scripts/CreateRandomPath.cs"
+"Assets/Plugins/WhiteCat/Examples/Example Assets/Scripts/CustomStackSM.cs"
+"Assets/Plugins/WhiteCat/Examples/Example Assets/Scripts/CustomStackState.cs"
+"Assets/Plugins/WhiteCat/Examples/Example Assets/Scripts/CustomTweenSize.cs"
+"Assets/Plugins/WhiteCat/Examples/Example Assets/Scripts/DragAlongPath.cs"
+"Assets/Plugins/WhiteCat/Examples/Example Assets/Scripts/Gun.cs"
+"Assets/Plugins/WhiteCat/Examples/Example Assets/Scripts/PingPongMoveAlongPath.cs"
+"Assets/Plugins/WhiteCat/Examples/Example Assets/Scripts/TweenTest.cs"
+"Assets/Plugins/WhiteCat/Examples/Example Assets/Scripts/UIPanel.cs"
+"Assets/Plugins/WhiteCat/Examples/Example Assets/Scripts/UseAttributes.cs"
+Assets/Plugins/WhiteCat/Scripts/Common/AASpace/Cuboid.cs
+Assets/Plugins/WhiteCat/Scripts/Common/AASpace/Range.cs
+Assets/Plugins/WhiteCat/Scripts/Common/AASpace/Rectangle.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Attributes/ClampAttribute.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Attributes/DirectionAttribute.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Attributes/EditableAttribute.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Attributes/EulerAnglesAttribute.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Attributes/GetSetAttribute.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Attributes/LabelAttribute.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Attributes/LayerAttribute.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Attributes/MaxAttribute.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Attributes/MinAttribute.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Axis.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Base/DecoratorAttributeWithEditor.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Base/PropertyAttributeWithEditor.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Base/ScriptableAsset.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Base/ScriptableAssetSingletonWithEditor.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Base/ScriptableAssetWithEditor.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Base/ScriptableComponent.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Base/ScriptableComponentWithEditor.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Base/SerializableClassWithEditor.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Components/ActionCollector.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Components/GameObjectPool.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Components/Toggle.cs
+Assets/Plugins/WhiteCat/Scripts/Common/DataFile.cs
+Assets/Plugins/WhiteCat/Scripts/Common/EditorScripts/EditorBase/BaseEditor.cs
+Assets/Plugins/WhiteCat/Scripts/Common/EditorScripts/EditorBase/BasePropertyDrawer.cs
+Assets/Plugins/WhiteCat/Scripts/Common/EditorScripts/EditorBase/FolderLocator.cs
+Assets/Plugins/WhiteCat/Scripts/Common/EditorScripts/EditorKit/AssetKit.cs
+Assets/Plugins/WhiteCat/Scripts/Common/EditorScripts/EditorKit/GUIKit.cs
+Assets/Plugins/WhiteCat/Scripts/Common/EditorScripts/ScriptGenerator.cs
+Assets/Plugins/WhiteCat/Scripts/Common/KeyValuePair.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Kit/ArrayKit.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Kit/BitwiseOperationKit.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Kit/IOKit.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Kit/Kit.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Kit/MathKit.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Kit/ReflectionKit.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Kit/UnityKit.cs
+Assets/Plugins/WhiteCat/Scripts/Common/Random.cs
+Assets/Plugins/WhiteCat/Scripts/Common/TimeMode.cs
+Assets/Plugins/WhiteCat/Scripts/Common/TreeNode.cs
+Assets/Plugins/WhiteCat/Scripts/Common/UnionValue/BasicValueTypes.cs
+Assets/Plugins/WhiteCat/Scripts/Common/UnionValue/TypedUnionValue.cs
+Assets/Plugins/WhiteCat/Scripts/Common/UnionValue/UnionValue.cs
+Assets/Plugins/WhiteCat/Scripts/Common/UpdateMode.cs
+Assets/Plugins/WhiteCat/Scripts/FSM/StackState/BaseStackState.cs
+Assets/Plugins/WhiteCat/Scripts/FSM/StackState/IStackState.cs
+Assets/Plugins/WhiteCat/Scripts/FSM/StackState/SerializableStackState.cs
+Assets/Plugins/WhiteCat/Scripts/FSM/StackState/StackState.cs
+Assets/Plugins/WhiteCat/Scripts/FSM/StackStateMachine/BaseStackStateMachine.cs
+Assets/Plugins/WhiteCat/Scripts/FSM/StackStateMachine/StackStateMachine.cs
+Assets/Plugins/WhiteCat/Scripts/FSM/State/BaseState.cs
+Assets/Plugins/WhiteCat/Scripts/FSM/State/IState.cs
+Assets/Plugins/WhiteCat/Scripts/FSM/State/SerializableState.cs
+Assets/Plugins/WhiteCat/Scripts/FSM/State/State.cs
+Assets/Plugins/WhiteCat/Scripts/FSM/StateMachine/BaseStateMachine.cs
+Assets/Plugins/WhiteCat/Scripts/FSM/StateMachine/StateMachine.cs
+Assets/Plugins/WhiteCat/Scripts/Path/BezierPath/BezierNode.cs
+Assets/Plugins/WhiteCat/Scripts/Path/BezierPath/BezierPath.cs
+Assets/Plugins/WhiteCat/Scripts/Path/BezierPath/BezierPathEditor.cs
+Assets/Plugins/WhiteCat/Scripts/Path/CardinalPath/CardinalPath.cs
+Assets/Plugins/WhiteCat/Scripts/Path/CardinalPath/CardinalPathEditor.cs
+Assets/Plugins/WhiteCat/Scripts/Path/KeyframeList/Components/FieldOfViewKeyframeList.cs
+Assets/Plugins/WhiteCat/Scripts/Path/KeyframeList/Components/FloatKeyframeList.cs
+Assets/Plugins/WhiteCat/Scripts/Path/KeyframeList/Components/MoveSpeedKeyframeList.cs
+Assets/Plugins/WhiteCat/Scripts/Path/KeyframeList/Components/RotationKeyframeList.cs
+Assets/Plugins/WhiteCat/Scripts/Path/KeyframeList/Keyframe.cs
+Assets/Plugins/WhiteCat/Scripts/Path/KeyframeList/KeyframeList.cs
+Assets/Plugins/WhiteCat/Scripts/Path/KeyframeList/KeyframeListEditor.cs
+Assets/Plugins/WhiteCat/Scripts/Path/Location.cs
+Assets/Plugins/WhiteCat/Scripts/Path/MoveAlongPath/MoveAlongPath.cs
+Assets/Plugins/WhiteCat/Scripts/Path/MoveAlongPath/MoveAlongPathPhysics.cs
+Assets/Plugins/WhiteCat/Scripts/Path/MoveAlongPath/MoveAlongPathWithSpeed.cs
+Assets/Plugins/WhiteCat/Scripts/Path/MoveAlongPath/MovingObject.cs
+Assets/Plugins/WhiteCat/Scripts/Path/Path.cs
+Assets/Plugins/WhiteCat/Scripts/Path/PathEditor.cs
+Assets/Plugins/WhiteCat/Scripts/Path/Spline/CubicSpline.cs
+Assets/Plugins/WhiteCat/Scripts/Path/Spline/QuadraticSpline.cs
+"Assets/Plugins/WhiteCat/Scripts/Tween/Animations/2D and UI/TweenCanvasGroupAlpha.cs"
+"Assets/Plugins/WhiteCat/Scripts/Tween/Animations/2D and UI/TweenGraphicColor.cs"
+"Assets/Plugins/WhiteCat/Scripts/Tween/Animations/2D and UI/TweenImageFillAmount.cs"
+"Assets/Plugins/WhiteCat/Scripts/Tween/Animations/2D and UI/TweenSpriteRendererColor.cs"
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/AudioSource/TweenAudioSourcePitch.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/AudioSource/TweenAudioSourceVolume.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Camera/TweenCameraBackgroundColor.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Camera/TweenCameraFieldOfView.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Global/TweenAmbientEquatorColor.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Global/TweenAmbientGroundColor.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Global/TweenAmbientIntensity.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Global/TweenAmbientSkyColor.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Global/TweenFogColor.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Global/TweenFogDensity.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Global/TweenFogEndDistance.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Global/TweenFogStartDistance.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Global/TweenTimeScale.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Light/TweenLightColor.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Light/TweenLightIntensity.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Light/TweenLightRange.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Light/TweenLightShadowStrength.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Material/MaterialProperty.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Material/TweenMaterialColor.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Material/TweenMaterialFloat.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Material/TweenMaterialRange.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Material/TweenMaterialTextureOffset.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Material/TweenMaterialTextureScale.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Material/TweenMaterialVector.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Path/TweenPositionAlongPath.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Physics/TweenRigidbodyPosition.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Physics/TweenRigidbodyRotation.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/RectTransform/TweenAnchorMax.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/RectTransform/TweenAnchorMin.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/RectTransform/TweenAnchoredPosition.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/RectTransform/TweenAnchoredPosition3D.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/RectTransform/TweenOffsetMax.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/RectTransform/TweenOffsetMin.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/RectTransform/TweenPivot.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/RectTransform/TweenSizeDelta.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Transform/TweenEulerAngles.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Transform/TweenPosition.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Transform/TweenRotation.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Transform/TweenScale.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Animations/Transform/TweenTransform.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Enums.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Interpolator/AdjustableInterpolators.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Interpolator/CommonInterpolators.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Interpolator/Interpolator.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Interpolator/InterpolatorDrawer.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/TweenAnimation.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/TweenFromTo/TweenColor.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/TweenFromTo/TweenFloat.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/TweenFromTo/TweenFromTo.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/TweenFromTo/TweenFromToEditor.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/TweenFromTo/TweenQuaternion.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/TweenFromTo/TweenVector2.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/TweenFromTo/TweenVector3.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/TweenFromTo/TweenVector4.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/Tweener.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/TweenerEditor.cs
+Assets/Plugins/WhiteCat/Scripts/Tween/TweenerReferenceAttribute.cs
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.Linq.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.Lang.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\Boo.Lang.dll"
+-sdk:unity

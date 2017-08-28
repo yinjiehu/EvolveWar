@@ -1,0 +1,26 @@
+﻿using Model;
+using Network.Code;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Shared.Talent
+{
+	public class TalentLevelUpRes
+	{
+		public CodeMessage Result { set; get; }
+
+		public PlayerStatus Player { set; get; }
+
+		public TalentLevelUpRes()
+		{
+			Result = ReturnCode.OK;
+		}
+
+		public TalentLevelUpRes(CodeMessage code)
+		{
+			Result = code;
+		}
+	}
+}

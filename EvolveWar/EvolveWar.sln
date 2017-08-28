@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolveWar.Plugins", "EvolveWar.Plugins.csproj", "{F420BED7-E119-C669-C480-730ED7CB93F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolveWar", "EvolveWar.csproj", "{F1F46E94-5DC2-4FC5-C8FB-516C9060CAA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvolveWar.Editor", "EvolveWar.Editor.csproj", "{EB6EB519-8402-7FB0-1E3C-858AF1918917}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F420BED7-E119-C669-C480-730ED7CB93F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F420BED7-E119-C669-C480-730ED7CB93F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F420BED7-E119-C669-C480-730ED7CB93F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F420BED7-E119-C669-C480-730ED7CB93F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F46E94-5DC2-4FC5-C8FB-516C9060CAA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F46E94-5DC2-4FC5-C8FB-516C9060CAA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F46E94-5DC2-4FC5-C8FB-516C9060CAA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F46E94-5DC2-4FC5-C8FB-516C9060CAA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB6EB519-8402-7FB0-1E3C-858AF1918917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6EB519-8402-7FB0-1E3C-858AF1918917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6EB519-8402-7FB0-1E3C-858AF1918917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6EB519-8402-7FB0-1E3C-858AF1918917}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

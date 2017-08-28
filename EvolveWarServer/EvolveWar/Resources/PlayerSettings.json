@@ -1,0 +1,111 @@
+﻿{
+  "DataCollection": [
+    {
+      "_level": 1,
+      "_attack": 80,
+      "_defense": 48,
+      "_life": 320,
+      "_crit": 0.5,
+      "_critHurt": 40,
+      "_ignoreAttack": 0,
+      "_ignoreDefense": 0
+    },
+    {
+      "_level": 2,
+      "_attack": 160,
+      "_defense": 96,
+      "_life": 640,
+      "_crit": 1.0,
+      "_critHurt": 80,
+      "_ignoreAttack": 0,
+      "_ignoreDefense": 0
+    },
+    {
+      "_level": 3,
+      "_attack": 240,
+      "_defense": 144,
+      "_life": 960,
+      "_crit": 1.5,
+      "_critHurt": 120,
+      "_ignoreAttack": 0,
+      "_ignoreDefense": 0
+    },
+    {
+      "_level": 4,
+      "_attack": 320,
+      "_defense": 192,
+      "_life": 1280,
+      "_crit": 2.0,
+      "_critHurt": 160,
+      "_ignoreAttack": 0,
+      "_ignoreDefense": 0
+    },
+    {
+      "_level": 5,
+      "_attack": 400,
+      "_defense": 240,
+      "_life": 1600,
+      "_crit": 2.5,
+      "_critHurt": 200,
+      "_ignoreAttack": 0,
+      "_ignoreDefense": 0
+    },
+    {
+      "_level": 6,
+      "_attack": 480,
+      "_defense": 288,
+      "_life": 1920,
+      "_crit": 3.0,
+      "_critHurt": 240,
+      "_ignoreAttack": 0,
+      "_ignoreDefense": 0
+    },
+    {
+      "_level": 7,
+      "_attack": 560,
+      "_defense": 336,
+      "_life": 2240,
+      "_crit": 3.5,
+      "_critHurt": 280,
+      "_ignoreAttack": 0,
+      "_ignoreDefense": 0
+    },
+    {
+      "_level": 8,
+      "_attack": 640,
+      "_defense": 384,
+      "_life": 2560,
+      "_crit": 4.0,
+      "_critHurt": 320,
+      "_ignoreAttack": 0,
+      "_ignoreDefense": 0
+    },
+    {
+      "_level": 9,
+      "_attack": 720,
+      "_defense": 432,
+      "_life": 2880,
+      "_crit": 4.5,
+      "_critHurt": 360,
+      "_ignoreAttack": 0,
+      "_ignoreDefense": 0
+    },
+    {
+      "_level": 10,
+      "_attack": 800,
+      "_defense": 480,
+      "_life": 3200,
+      "_crit": 5.0,
+      "_critHurt": 400,
+      "_ignoreAttack": 0,
+      "_ignoreDefense": 0
+    }
+  ],
+  "useGUILayout": true,
+  "runInEditMode": false,
+  "enabled": true,
+  "isActiveAndEnabled": true,
+  "tag": "Untagged",
+  "name": "PlayerSettigns",
+  "hideFlags": 0
+}

@@ -1,0 +1,291 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/Assembly-CSharp.dll
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll"
+-r:Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll
+-r:Assets/Network/System.ComponentModel.DataAnnotations.dll
+-r:Assets/Plugins/BestHTTP.dll
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_5_1
+-define:UNITY_5_5
+-define:UNITY_5
+-define:UNITY_ANALYTICS
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_GENERICS
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:PLATFORM_SUPPORTS_MONO
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_SCRIPTING_NEW_CSHARP_COMPILER
+-define:UNITY_ANDROID
+-define:ENABLE_SUBSTANCE
+-define:UNITY_ANDROID_API
+-define:ENABLE_EGL
+-define:ENABLE_NETWORK
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:PLATFORM_SUPPORTS_ADS_ID
+-define:UNITY_CAN_SHOW_SPLASH_SCREEN
+-define:ENABLE_VIDEO
+-define:ENABLE_VR
+-define:ENABLE_UNITYADS_RUNTIME
+-define:UNITY_UNITYADS_API
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+-define:UNITY_PRO_LICENSE
+Assets/EvolveWar/Data/CollectionContainer/TalentSettingsCollectionContainer.cs
+Assets/EvolveWar/Data/Config.cs
+Assets/EvolveWar/Data/SDKManager.cs
+Assets/EvolveWar/Data/Settings/NickNameCollection.cs
+Assets/EvolveWar/Data/Settings/Player/PlayerSettings.cs
+Assets/EvolveWar/Data/Settings/Player/PlayerSettingsCollection.cs
+Assets/EvolveWar/Data/Settings/Skill/SkillSettings.cs
+Assets/EvolveWar/Data/Settings/Skill/SkillSettingsCollection.cs
+Assets/EvolveWar/Data/Settings/Talent/TalentSettings.cs
+Assets/EvolveWar/Data/Settings/Talent/TalentSettingsCollection.cs
+Assets/EvolveWar/Data/Temp.cs
+Assets/EvolveWar/Models/Account.cs
+Assets/EvolveWar/Models/Save.cs
+Assets/EvolveWar/Models/Shared/Battle/BattlePlayerInfo.cs
+Assets/EvolveWar/Models/Shared/PlayerStatus.cs
+Assets/EvolveWar/Models/Shared/ReqRes/Battle/BattleClearReq.cs
+Assets/EvolveWar/Models/Shared/ReqRes/Battle/BattleClearRes.cs
+Assets/EvolveWar/Models/Shared/ReqRes/Battle/BattleStartReq.cs
+Assets/EvolveWar/Models/Shared/ReqRes/Battle/BattleStartRes.cs
+Assets/EvolveWar/Models/Shared/ReqRes/Login/LoginRes.cs
+Assets/EvolveWar/Models/Shared/ReqRes/Login/SetNickNameRes.cs
+Assets/EvolveWar/Models/Shared/ReqRes/Rank/GetRankingListRes.cs
+Assets/EvolveWar/Models/Shared/ReqRes/Role/RechargeRes.cs
+Assets/EvolveWar/Models/Shared/ReqRes/Talent/TalentLevelUpReq.cs
+Assets/EvolveWar/Models/Shared/ReqRes/Talent/TalentLevelUpRes.cs
+Assets/EvolveWar/Models/Shared/ReqRes/Talent/TalentResetRes.cs
+Assets/EvolveWar/Models/Shared/Talent/TalentStatus.cs
+Assets/EvolveWar/Models/Shared/Talent/TalentStatusCollection.cs
+Assets/EvolveWar/Scripts/BattleEvent/DestroyUnitInfo.cs
+Assets/EvolveWar/Scripts/Components/Camera/FollowCamera.cs
+Assets/EvolveWar/Scripts/Components/DestroyPoint.cs
+Assets/EvolveWar/Scripts/Components/Joystick.cs
+Assets/EvolveWar/Scripts/Components/RandomShowPoint.cs
+Assets/EvolveWar/Scripts/Protocols/GameProtocol.cs
+Assets/EvolveWar/Scripts/Protocols/RequestHelper/GameRequestHelper.cs
+Assets/EvolveWar/Scripts/Scene/Battle/BattleScene.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Component/FxHandler.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Food/Food.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Food/FoodBlood.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Food/FoodBox.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Food/FoodExp.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Generate/GenerateFood.cs
+Assets/EvolveWar/Scripts/Scene/Battle/State/AIState.cs
+Assets/EvolveWar/Scripts/Scene/Battle/State/AttackState.cs
+Assets/EvolveWar/Scripts/Scene/Battle/State/BypassState.cs
+Assets/EvolveWar/Scripts/Scene/Battle/State/FindFoodState.cs
+Assets/EvolveWar/Scripts/Scene/Battle/State/IdleState.cs
+Assets/EvolveWar/Scripts/Scene/Battle/State/SearchAttackState.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Unit/Ability/AIMoveAbility.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Unit/Ability/Ability.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Unit/Ability/AutoAttackAbility.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Unit/Ability/ClothingAbility.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Unit/Ability/CollisionFilterAbility.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Unit/Ability/EatAbility.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Unit/Ability/IAbility.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Unit/Ability/InputAbility.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Unit/Ability/MoveAbility.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Unit/Ability/ShowIndentifyAbility.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Unit/AttackEffect.cs
+Assets/EvolveWar/Scripts/Scene/Battle/Unit/BattleUnit.cs
+Assets/EvolveWar/Scripts/Sound/BGSoundPlayer.cs
+Assets/EvolveWar/Scripts/Sound/EffectSoundMgr.cs
+Assets/EvolveWar/Scripts/Sound/EffectSoundPlayer.cs
+Assets/EvolveWar/Scripts/UI/BattlePanel.cs
+Assets/EvolveWar/Scripts/UI/BattleQuitPanel.cs
+Assets/EvolveWar/Scripts/UI/BattleResultPanel.cs
+Assets/EvolveWar/Scripts/UI/Compenont/AttackColliderFillter.cs
+Assets/EvolveWar/Scripts/UI/Compenont/BloodEffect.cs
+Assets/EvolveWar/Scripts/UI/Compenont/HpBar.cs
+Assets/EvolveWar/Scripts/UI/Compenont/NumberShow.cs
+Assets/EvolveWar/Scripts/UI/Compenont/RankBlock.cs
+Assets/EvolveWar/Scripts/UI/Compenont/RankNumShow.cs
+Assets/EvolveWar/Scripts/UI/Compenont/SkillBlock.cs
+Assets/EvolveWar/Scripts/UI/Compenont/TalentBlock.cs
+Assets/EvolveWar/Scripts/UI/Compenont/TalentSimpleBlock.cs
+Assets/EvolveWar/Scripts/UI/Compenont/UIFxHandler.cs
+Assets/EvolveWar/Scripts/UI/DialogPanel.cs
+Assets/EvolveWar/Scripts/UI/GiftPanel.cs
+Assets/EvolveWar/Scripts/UI/LoginPanel.cs
+Assets/EvolveWar/Scripts/UI/NetWaitPanel.cs
+Assets/EvolveWar/Scripts/UI/NickNamePanel.cs
+Assets/EvolveWar/Scripts/UI/RankingPanel.cs
+Assets/EvolveWar/Scripts/UI/RechargeSuccessPanel.cs
+Assets/EvolveWar/Scripts/UI/RevivePanel.cs
+Assets/EvolveWar/Scripts/UI/RoleDetailsPanel.cs
+Assets/EvolveWar/Scripts/UI/RolePanel.cs
+Assets/EvolveWar/Scripts/UI/SettingsPanel.cs
+Assets/EvolveWar/Scripts/UI/TalentPanel.cs
+Assets/EvolveWar/Scripts/Utility/Utility.cs
+Assets/Kit/Scripts/Attributes/HarunaInspect.cs
+Assets/Kit/Scripts/Attributes/InspectorButton.cs
+Assets/Kit/Scripts/Attributes/InspectorSpace.cs
+Assets/Kit/Scripts/Attributes/TypeSelector.cs
+Assets/Kit/Scripts/GameEvent/AbstractGameEventManager.cs
+Assets/Kit/Scripts/GameEvent/GlobalEventManager.cs
+Assets/Kit/Scripts/Performance/PeConcurrentChildren.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoAnimatorControl.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoAnimatorSpeedControl.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoAudioLinearFadeOut.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoCallFunction.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoCanvasGroupFade.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoCanvasGroupFadeCallback.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoDestroyGameObject.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoFadeChildren.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoObjectActivate.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoRotateStay.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoRotateY.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoScaleStay.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoSinScaleX.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoSliderMove.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoTimeElapsed.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoTimeScaleCurve.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoTimeScalePause.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoTimeScaleResume.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoToggle.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoUIButtonActive.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoUIChangeSizeDelta.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoUIMoveTo.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoUISetImageSprite.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoUIShake.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoUITextNumberChange.cs
+Assets/Kit/Scripts/Performance/PeDo/PeDoUITextScaleY.cs
+Assets/Kit/Scripts/Performance/PeNode.cs
+Assets/Kit/Scripts/Performance/PeRoot.cs
+Assets/Kit/Scripts/Performance/PeSequenceChildren.cs
+Assets/Kit/Scripts/Performance/PeUtil/PeUntilObjectEnter.cs
+Assets/Kit/Scripts/Performance/PeUtil/PeUntilTimeElapsed.cs
+Assets/Kit/Scripts/Performance/PeUtil/PeUntilTriggerEnter.cs
+Assets/Kit/Scripts/Performance/SpecifyTarget.cs
+Assets/Kit/Scripts/UI/BasePanel.cs
+Assets/Kit/Scripts/UI/ListMemberUpdater.cs
+Assets/Kit/Scripts/UI/MainUI.cs
+Assets/Kit/Scripts/UI/ToggleStatus.cs
+Assets/Kit/Scripts/Utility/ISerializeToJson.cs
+Assets/Kit/Scripts/Utility/IgnoreUnityObjectContractResolver.cs
+Assets/Kit/Scripts/Utility/OpenXml/ExcelCell.cs
+Assets/Kit/Scripts/Utility/OpenXml/ExcelRow.cs
+Assets/Kit/Scripts/Utility/OpenXml/ExcelSheet.cs
+Assets/Kit/Scripts/Utility/OpenXml/Extend.cs
+Assets/Kit/Scripts/Utility/OpenXml/OpenXmlParser.cs
+Assets/Kit/Scripts/Utility/OpenXml/Parser/ObjectParser.cs
+Assets/Kit/Scripts/Utility/OpenXml/Parser/ParseProvider.cs
+Assets/Kit/Scripts/Utility/OpenXml/Parser/ParseSettings.cs
+Assets/Kit/Scripts/Utility/RandamUtility.cs
+Assets/Kit/Scripts/Utility/ScrollCircle.cs
+Assets/Kit/Scripts/Utility/UtilitySerializeHelper.cs
+"Assets/Network/Best HTTP (Basic)/Examples/HTTP/AssetBundleSample.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/HTTP/LargeFileDownloadSample.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/HTTP/TextureDownloadSample.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/HTTP/UploadStream.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/Helpers/CodeBlocks.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/Helpers/GUIHelper.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/LitJson/IJsonWrapper.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/LitJson/JsonData.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/LitJson/JsonException.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/LitJson/JsonMapper.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/LitJson/JsonMockWrapper.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/LitJson/JsonReader.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/LitJson/JsonWriter.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/LitJson/Lexer.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/LitJson/ParserToken.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/Plugin/CacheMaintenanceSample.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/SampleSelector.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/SignalR/Authentication Providers/SampleCookieAuthentication.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/SignalR/Authentication Providers/SampleHeaderAuthentication.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/SignalR/AuthenticationSample.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/SignalR/ConnectionAPISample.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/SignalR/ConnectionStatusSample.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/SignalR/DemoHubSample.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/SignalR/Json Encoders/LitJsonEncoder.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/SignalR/SimpleStreamingSample.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/SocketIO/SocketIO Json Encoders/JsonDotNetEncoder.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/SocketIO/SocketIO Json Encoders/LitJsonEncoder.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/SocketIO/SocketIOChatSample.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/SocketIO/SocketIOWePlaySample.cs"
+"Assets/Network/Best HTTP (Basic)/Examples/Websocket/WebSocketSample.cs"
+Assets/Network/CustomCode.cs
+Assets/Network/DownloadProtocol.cs
+Assets/Network/Http/HttpClient.cs
+Assets/Network/Http/HttpErrorExcetion.cs
+Assets/Network/Http/HttpWebRequestInfo.cs
+Assets/Network/Http/HttpWebRequestPoster.cs
+Assets/Network/Http/HttpWebRequestUtility.cs
+Assets/Network/Http/Protocols/ConnectServerAttribute.cs
+Assets/Network/Http/Protocols/DontCheckTokenAttribute.cs
+Assets/Network/Http/Protocols/Protocol.cs
+Assets/Network/Http/Protocols/ProtocolManager.cs
+Assets/Network/JsonConditionIgnoreContractResolver.cs
+Assets/Network/JsonConverter/AbstractCustomBinaryConverter.cs
+Assets/Network/JsonConverter/CustomDateTimeConverter.cs
+Assets/Network/JsonInterfaceBinder.cs
+Assets/Network/JsonUtilNet.cs
+Assets/Network/NetworkUtil.cs
+Assets/Network/Validator.cs
+Assets/TalkingDataScripts/TDGAAccount.cs
+Assets/TalkingDataScripts/TDGAItem.cs
+Assets/TalkingDataScripts/TDGAMission.cs
+Assets/TalkingDataScripts/TDGAVirtualCurrency.cs
+Assets/TalkingDataScripts/TalkingDataDemoScript.cs
+Assets/TalkingDataScripts/TalkingDataGA.cs
+Assets/Test.cs
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.Linq.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.Lang.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\Boo.Lang.dll"
+-sdk:unity

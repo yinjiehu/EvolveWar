@@ -1,0 +1,38 @@
+﻿using UnityEngine;
+using System.Collections;
+using Kit.Inspector;
+using Kit.Utility.OpenXml;
+using System.Collections.Generic;
+
+public class NickNameCollection : MonoBehaviour {
+
+	[SerializeField]
+	TextAsset _excel;
+
+	[SerializeField]
+	List<string> _nickNames;
+
+	[SerializeField]
+	InspectorButton _loadExcel;
+
+	public void LoadExcel()
+	{
+		_nickNames = new List<string>();
+		var xml = new OpenXmlParser();
+		xml.LoadXml(_excel.text);
+		var sheet = xml.SelectSheet("NickName");
+		while(sheet.MoveNext())
+		{
+			var nickName = sheet.CurrentRow[0].StringValue;
+			if (!string.IsNullOrEmpty(nickName))
+			{
+				_nickNames.Add(nickName);
+			}
+		}
+	}
+
+	public string GetRandomName()
+	{
+		return _nickNames[Random.Range(0, _nickNames.Count)];
+	}
+}
