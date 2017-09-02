@@ -222,7 +222,7 @@ public class BattleUnit : MonoBehaviour
 
 	public Transform GetRoleArrow()
 	{
-		return transform.FindChild("AttackEffect");
+		return transform.Find("AttackEffect");
 	}
 
 	public void Attack()

@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{34B583B6-9A1E-96E5-D720-B7FF2A7850C3}</ProjectGuid>
+    <ProjectGuid>{6B1D6F5E-F0D5-8360-384B-E43680B84911}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_IOS_NATIVE_CRASH_REPORTING;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_GFX_USE_PLATFORM_VSYNC;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;UNITY_HAS_GOOGLEVR</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -39,85 +39,103 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BattleWorld\Data\CollectionContainer\TalentSettingsCollectionContainer.cs" />
-     <Compile Include="Assets\BattleWorld\Data\Config.cs" />
-     <Compile Include="Assets\BattleWorld\Data\Settings\NickNameCollection.cs" />
-     <Compile Include="Assets\BattleWorld\Data\Settings\Player\PlayerSettings.cs" />
-     <Compile Include="Assets\BattleWorld\Data\Settings\Player\PlayerSettingsCollection.cs" />
-     <Compile Include="Assets\BattleWorld\Data\Settings\Skill\SkillSettings.cs" />
-     <Compile Include="Assets\BattleWorld\Data\Settings\Skill\SkillSettingsCollection.cs" />
-     <Compile Include="Assets\BattleWorld\Data\Settings\Talent\TalentSettings.cs" />
-     <Compile Include="Assets\BattleWorld\Data\Settings\Talent\TalentSettingsCollection.cs" />
-     <Compile Include="Assets\BattleWorld\Data\Temp.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\BattleEvent\DestroyUnitInfo.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Components\Camera\FollowCamera.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Components\Joystick.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Protocols\GameProtocol.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Protocols\RequestHelper\GameRequestHelper.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\BattleScene.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Component\FxHandler.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Food\Food.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Food\FoodBlood.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Food\FoodBox.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Food\FoodExp.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Generate\GenerateFood.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\State\AIState.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\State\AttackState.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\State\BypassState.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\State\FindFoodState.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\State\IdleState.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\State\SearchAttackState.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Unit\Ability\AIMoveAbility.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Unit\Ability\Ability.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Unit\Ability\AutoAttackAbility.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Unit\Ability\ClothingAbility.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Unit\Ability\CollisionFilterAbility.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Unit\Ability\EatAbility.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Unit\Ability\IAbility.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Unit\Ability\InputAbility.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Unit\Ability\MoveAbility.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Unit\Ability\ShowIndentifyAbility.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Unit\AttackEffect.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Scene\Battle\Unit\BattleUnit.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\BattlePanel.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\BattleQuitPanel.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\BattleResultPanel.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\Compenont\AttackColliderFillter.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\Compenont\BloodEffect.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\Compenont\HpBar.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\Compenont\RankBlock.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\Compenont\TalentBlock.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\Compenont\TalentSimpleBlock.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\Compenont\UIFxHandler.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\DialogPanel.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\LoginPanel.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\NetWaitPanel.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\NickNamePanel.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\RankingPanel.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\RevivePanel.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\RolePanel.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\UI\TalentPanel.cs" />
-     <Compile Include="Assets\BattleWorld\Scripts\Utility\Utility.cs" />
-     <Compile Include="Assets\BattleWorld\Shared\Models\Account.cs" />
-     <Compile Include="Assets\BattleWorld\Shared\Models\Battle\BattlePlayerInfo.cs" />
-     <Compile Include="Assets\BattleWorld\Shared\Models\PlayerStatus.cs" />
-     <Compile Include="Assets\BattleWorld\Shared\Models\ReqRes\Battle\BattleClearReq.cs" />
-     <Compile Include="Assets\BattleWorld\Shared\Models\ReqRes\Battle\BattleClearRes.cs" />
-     <Compile Include="Assets\BattleWorld\Shared\Models\ReqRes\Battle\BattleStartReq.cs" />
-     <Compile Include="Assets\BattleWorld\Shared\Models\ReqRes\Battle\BattleStartRes.cs" />
-     <Compile Include="Assets\BattleWorld\Shared\Models\ReqRes\Login\LoginRes.cs" />
-     <Compile Include="Assets\BattleWorld\Shared\Models\ReqRes\Login\SetNickNameRes.cs" />
-     <Compile Include="Assets\BattleWorld\Shared\Models\ReqRes\Rank\GetRankingListRes.cs" />
-     <Compile Include="Assets\BattleWorld\Shared\Models\Save.cs" />
-     <Compile Include="Assets\BattleWorld\Shared\Models\Talent\TalentStatus.cs" />
-     <Compile Include="Assets\BattleWorld\Shared\Models\Talent\TalentStatusCollection.cs" />
+     <Compile Include="Assets\EvolveWar\Data\CollectionContainer\TalentSettingsCollectionContainer.cs" />
+     <Compile Include="Assets\EvolveWar\Data\Config.cs" />
+     <Compile Include="Assets\EvolveWar\Data\PayMgr.cs" />
+     <Compile Include="Assets\EvolveWar\Data\SDKManager.cs" />
+     <Compile Include="Assets\EvolveWar\Data\Settings\NickNameCollection.cs" />
+     <Compile Include="Assets\EvolveWar\Data\Settings\Player\PlayerSettings.cs" />
+     <Compile Include="Assets\EvolveWar\Data\Settings\Player\PlayerSettingsCollection.cs" />
+     <Compile Include="Assets\EvolveWar\Data\Settings\Skill\SkillSettings.cs" />
+     <Compile Include="Assets\EvolveWar\Data\Settings\Skill\SkillSettingsCollection.cs" />
+     <Compile Include="Assets\EvolveWar\Data\Settings\Talent\TalentSettings.cs" />
+     <Compile Include="Assets\EvolveWar\Data\Settings\Talent\TalentSettingsCollection.cs" />
+     <Compile Include="Assets\EvolveWar\Data\Temp.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Account.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Save.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\Battle\BattlePlayerInfo.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\PlayerStatus.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Battle\BattleClearReq.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Battle\BattleClearRes.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Battle\BattleStartReq.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Battle\BattleStartRes.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Login\LoginRes.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Login\SetNickNameRes.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Rank\GetRankingListRes.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Role\RechargeRes.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Talent\TalentLevelUpReq.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Talent\TalentLevelUpRes.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\ReqRes\Talent\TalentResetRes.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\Talent\TalentStatus.cs" />
+     <Compile Include="Assets\EvolveWar\Models\Shared\Talent\TalentStatusCollection.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\BattleEvent\DestroyUnitInfo.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Components\Camera\FollowCamera.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Components\DestroyPoint.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Components\Joystick.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Components\RandomShowPoint.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Protocols\GameProtocol.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Protocols\RequestHelper\GameRequestHelper.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\BattleScene.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Component\FxHandler.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Food\Food.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Food\FoodBlood.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Food\FoodBox.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Food\FoodExp.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Generate\GenerateFood.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\State\AIState.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\State\AttackState.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\State\BypassState.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\State\FindFoodState.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\State\IdleState.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\State\SearchAttackState.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\AIMoveAbility.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\Ability.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\AutoAttackAbility.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\ClothingAbility.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\CollisionFilterAbility.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\EatAbility.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\IAbility.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\InputAbility.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\MoveAbility.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\Ability\ShowIndentifyAbility.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\AttackEffect.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Scene\Battle\Unit\BattleUnit.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Sound\BGSoundPlayer.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Sound\EffectSoundMgr.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Sound\EffectSoundPlayer.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\BattlePanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\BattleQuitPanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\BattleResultPanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\AttackColliderFillter.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\BloodEffect.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\HpBar.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\NumberShow.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\RankBlock.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\RankNumShow.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\SkillBlock.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\TalentBlock.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\TalentSimpleBlock.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\Compenont\UIFxHandler.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\DialogPanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\GiftPanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\LoginPanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\NetWaitPanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\NickNamePanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\RankingPanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\RechargeSuccessPanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\RevivePanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\RoleDetailsPanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\RolePanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\SettingsPanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\UI\TalentPanel.cs" />
+     <Compile Include="Assets\EvolveWar\Scripts\Utility\Utility.cs" />
      <Compile Include="Assets\Kit\Scripts\Attributes\HarunaInspect.cs" />
      <Compile Include="Assets\Kit\Scripts\Attributes\InspectorButton.cs" />
      <Compile Include="Assets\Kit\Scripts\Attributes\InspectorSpace.cs" />
@@ -161,6 +179,7 @@
      <Compile Include="Assets\Kit\Scripts\UI\BasePanel.cs" />
      <Compile Include="Assets\Kit\Scripts\UI\ListMemberUpdater.cs" />
      <Compile Include="Assets\Kit\Scripts\UI\MainUI.cs" />
+     <Compile Include="Assets\Kit\Scripts\UI\ToggleStatus.cs" />
      <Compile Include="Assets\Kit\Scripts\Utility\ISerializeToJson.cs" />
      <Compile Include="Assets\Kit\Scripts\Utility\IgnoreUnityObjectContractResolver.cs" />
      <Compile Include="Assets\Kit\Scripts\Utility\OpenXml\ExcelCell.cs" />
@@ -172,6 +191,7 @@
      <Compile Include="Assets\Kit\Scripts\Utility\OpenXml\Parser\ParseProvider.cs" />
      <Compile Include="Assets\Kit\Scripts\Utility\OpenXml\Parser\ParseSettings.cs" />
      <Compile Include="Assets\Kit\Scripts\Utility\RandamUtility.cs" />
+     <Compile Include="Assets\Kit\Scripts\Utility\ScrollCircle.cs" />
      <Compile Include="Assets\Kit\Scripts\Utility\UtilitySerializeHelper.cs" />
      <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\HTTP\AssetBundleSample.cs" />
      <Compile Include="Assets\Network\Best HTTP (Basic)\Examples\HTTP\LargeFileDownloadSample.cs" />
@@ -221,53 +241,63 @@
      <Compile Include="Assets\Network\JsonUtilNet.cs" />
      <Compile Include="Assets\Network\NetworkUtil.cs" />
      <Compile Include="Assets\Network\Validator.cs" />
+     <Compile Include="Assets\TalkingDataScripts\TDGAAccount.cs" />
+     <Compile Include="Assets\TalkingDataScripts\TDGAItem.cs" />
+     <Compile Include="Assets\TalkingDataScripts\TDGAMission.cs" />
+     <Compile Include="Assets\TalkingDataScripts\TDGAVirtualCurrency.cs" />
+     <Compile Include="Assets\TalkingDataScripts\TalkingDataDemoScript.cs" />
+     <Compile Include="Assets\TalkingDataScripts\TalkingDataGA.cs" />
      <Compile Include="Assets\Test.cs" />
      <None Include="Assets\Plugins\WhiteCat\ReadMe.txt" />
      <None Include="Assets\Kit\Shader\SpriteMask.shader" />
      <None Include="Assets\UVOffset.shader" />
-     <None Include="Assets\BattleWorld\Excel\Xml\TalentSettings.xml" />
+     <None Include="Assets\EvolveWar\Excel\Xml\TalentSettings.xml" />
      <None Include="Assets\Network\Best HTTP (Basic)\link_android_subset.xml" />
      <None Include="Assets\JsonDotNet\link.xml" />
      <None Include="Assets\JsonDotNet\ReadMe.txt" />
-     <None Include="Assets\BattleWorld\Excel\Xml\SkillSettings.xml" />
+     <None Include="Assets\EvolveWar\Excel\Xml\SkillSettings.xml" />
      <None Include="Assets\Network\Best HTTP (Basic)\link.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Network\Best HTTP (Basic)\ReleaseNotes.txt" />
      <None Include="Assets\Kit\Shader\SupportTiling.shader" />
-     <None Include="Assets\BattleWorld\Excel\Xml\PlayerSettings.xml" />
+     <None Include="Assets\EvolveWar\Excel\Xml\PlayerSettings.xml" />
      <None Include="Assets\Kit\Scripts\Performance\readme.txt" />
-     <None Include="Assets\BattleWorld\Excel\Xml\NickName.xml" />
+     <None Include="Assets\EvolveWar\Excel\Xml\NickName.xml" />
      <None Include="Assets\Kit\Shader\Depth.shader" />
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.PlaymodeTestsRunner">
- <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
- <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
- <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>E:/Workspace/UNITY/BattleWorld/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+ <HintPath>/Users/dd/EvolveWar/EvolveWar/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="System.ComponentModel.DataAnnotations">
- <HintPath>E:/Workspace/UNITY/BattleWorld/Assets/Network/System.ComponentModel.DataAnnotations.dll</HintPath>
+ <HintPath>/Users/dd/EvolveWar/EvolveWar/Assets/Network/System.ComponentModel.DataAnnotations.dll</HintPath>
  </Reference>
  <Reference Include="BestHTTP">
- <HintPath>E:/Workspace/UNITY/BattleWorld/Assets/Plugins/BestHTTP.dll</HintPath>
+ <HintPath>/Users/dd/EvolveWar/EvolveWar/Assets/Plugins/BestHTTP.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{2C66807D-81FB-574F-8C49-0355D002F5CB}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{2980079C-0CE7-E9B3-6BF9-38C30BF30DFA}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

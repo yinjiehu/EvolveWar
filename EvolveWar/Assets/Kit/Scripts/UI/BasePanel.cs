@@ -32,7 +32,7 @@ namespace Kit.UI
 		{
 			//Debug.Log ("----------Awake-----------" + name);
 
-			Transform parentTran = MainUI.Instance.transform.FindChild(sortingLayer.ToString());
+			Transform parentTran = MainUI.Instance.transform.Find(sortingLayer.ToString());
 			if (parentTran == null)
 			{
 				for (int i = (int)SortingLayer.BGLayer; i <= (int)SortingLayer.DebugLayer; i++)
@@ -48,7 +48,7 @@ namespace Kit.UI
 					rt.SetSiblingIndex(i);
 				}
 
-				parentTran = MainUI.Instance.transform.FindChild(sortingLayer.ToString());
+				parentTran = MainUI.Instance.transform.Find(sortingLayer.ToString());
 			}
 			transform.SetParent(parentTran, false);
 		}
