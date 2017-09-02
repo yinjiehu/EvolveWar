@@ -1,3 +1,4 @@
-/Library/
-/obj/
-/Temp/
+#ignore
+Library
+obj
+Temp
