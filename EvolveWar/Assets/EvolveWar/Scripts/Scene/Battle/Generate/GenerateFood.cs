@@ -70,8 +70,8 @@ public class GenerateFood : MonoBehaviour
 		var point = new Vector2(0, 0);
 		while(true)
 		{
-			point.x = Random.Range(-_mapSize.x / 2f, _mapSize.x / 2f);
-			point.y = Random.Range(-_mapSize.y / 2f, _mapSize.y / 2f);
+			point.x = Random.Range(-_mapSize.x / 2.2f, _mapSize.x / 2.2f);
+			point.y = Random.Range(-_mapSize.y / 2.2f, _mapSize.y / 2.2f);
 
 			var colliders = Physics2D.OverlapCircleAll(point, 0.2f);
 			if (colliders.Length == 0)

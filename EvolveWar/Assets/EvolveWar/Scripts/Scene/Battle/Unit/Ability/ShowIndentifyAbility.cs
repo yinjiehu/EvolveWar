@@ -11,7 +11,7 @@ public class ShowIndentifyAbility : Ability
     public override void Init(BattleUnit unit)
     {
         base.Init(unit);
-		_hpPos = _unit.transform.FindChild("HpPos");
+		_hpPos = _unit.transform.Find("HpPos");
 		MainUI.Instance.GetPanel<BattlePanel>().GenerateHpBar(_hpPos, _unit.UnitInfo);
 	}
 

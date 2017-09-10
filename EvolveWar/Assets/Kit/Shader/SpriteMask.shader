@@ -1,4 +1,6 @@
-﻿Shader "ImageEffect/SpriteMask"
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "ImageEffect/SpriteMask"
 {
 	Properties
 	{
@@ -76,7 +78,7 @@
 	v2f vert(a2v i)
 	{
 		v2f o;
-		o.vertex = mul(UNITY_MATRIX_MVP, i.vertex);
+		o.vertex = UnityObjectToClipPos(i.vertex);
 		o.uv = i.uv;
 
 		o.color = i.color * _Color;

@@ -100,7 +100,7 @@ namespace Kit.Performance
 					case SpecifyTypeEnum.FindChild:
 						{
 							var t = GetParentByLevel(caller, _parentLevel);
-							t = t.FindChild(_findString);
+							t = t.Find(_findString);
 							if (t == null)
 							{
 								Debug.LogError("Can not find child " + _findString, caller);

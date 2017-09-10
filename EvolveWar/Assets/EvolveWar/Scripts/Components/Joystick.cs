@@ -42,8 +42,8 @@ public class Joystick : MonoBehaviour
     {
         touchPlatform = checkTouchPlatform();
         joystickCamera = transform.parent.GetComponent<Camera>();
-        stick = transform.FindChild("stick").GetComponent<Transform>().gameObject;
-        stickBase = transform.FindChild("base").GetComponent<Transform>().gameObject;
+        stick = transform.Find("stick").GetComponent<Transform>().gameObject;
+        stickBase = transform.Find("base").GetComponent<Transform>().gameObject;
         setJoystickPosition();
     }
 

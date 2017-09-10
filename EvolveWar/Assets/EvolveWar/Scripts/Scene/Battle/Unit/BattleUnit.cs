@@ -127,10 +127,6 @@ public class UnitInfo
 public class BattleUnit : MonoBehaviour
 {
 	[SerializeField]
-	StateMachine _fsm;
-	public StateMachine FSM { get { return _fsm; } }
-
-	[SerializeField]
     List<Ability> _abilityPrefabs = new List<Ability>();
 
     List<IAbility> _abilities = new List<IAbility>();
@@ -143,6 +139,8 @@ public class BattleUnit : MonoBehaviour
 	[SerializeField]
 	UIFxHandler _bloodEffect;
 	public UnitInfo UnitInfo { get { return _info; } }
+
+	public PlayMakerFSM Fsm { set; get; }
 
 	Vector3 _moveDirection;
 
@@ -168,16 +166,6 @@ public class BattleUnit : MonoBehaviour
         _info = new UnitInfo(BattleScene.Instance.IncreaseID, nickName, uid, level);
 		_info.SetExp(exp);
 		_info.Unit = this;
-		if(_fsm != null)
-		{
-			_fsm = Instantiate(_fsm);
-			_fsm.transform.SetParent(transform);
-			var states = _fsm.GetComponentsInChildren<AIState>();
-			foreach(var state in states)
-			{
-				state.OnInit(this, _fsm);
-			}
-		}
 
 		var abilities = GetComponentsInChildren<IAbility>(true);
         foreach(var ability in abilities)
@@ -192,10 +180,42 @@ public class BattleUnit : MonoBehaviour
             _abilities.Add(ability);
         }
 
-        _abilities.ForEach(a => a.Init(this));
+		InitPlayerMakerStateAbilities();
+
+
+		_abilities.ForEach(a => a.Init(this));
 
 		GlobalEventManager.Instance.RegistEvent<DestroyUnitInfo>(OnDestryUnitEvent);
     }
+
+
+	void InitPlayerMakerStateAbilities()
+	{
+		var fsms = GetComponentsInChildren<PlayMakerFSM>();
+		for (var i = 0; i < fsms.Length; i++)
+		{
+			var fsm = fsms[i];
+			for (var j = 0; j < fsm.FsmStates.Length; j++)
+			{
+				var s = fsm.FsmStates[j];
+				SetupFsmStates(s);
+			}
+		}
+	}
+
+	void SetupFsmStates(HutongGames.PlayMaker.FsmState state)
+	{
+		for (var j = 0; j < state.Actions.Length; j++)
+		{
+			var action = state.Actions[j];
+			if (action is IAbility)
+			{
+				var ab = (IAbility)action;
+				_abilities.Add(ab);
+				ab.Init(this);
+			}
+		}
+	}
 
 	void OnDestryUnitEvent(DestroyUnitInfo eventInfo, EventControl eventControl)
 	{
@@ -222,7 +242,7 @@ public class BattleUnit : MonoBehaviour
 
 	public Transform GetRoleArrow()
 	{
-		return transform.FindChild("AttackEffect");
+		return transform.Find("AttackEffect");
 	}
 
 	public void Attack()
