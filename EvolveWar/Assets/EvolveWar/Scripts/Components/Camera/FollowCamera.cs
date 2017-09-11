@@ -73,6 +73,13 @@ public class FollowCamera : MonoBehaviour {
         }
     }
 
+	public bool IsContiansPoint(Vector2 point)
+	{
+		if (point.x > -MapSize.x && point.x < MapSize.x && point.y > -MapSize.y && point.y < MapSize.y)
+			return true;
+		return false;
+	}
+
     void OnDrawGizmosSelected()
     {
         DrawGizmos();

@@ -21,7 +21,7 @@ namespace UI.Main
 		{
 			base.ShowPanel(obj);
 
-			_talentTxt.text = "天赋点数：" + Save.Player.Talent.Exp;
+			_talentTxt.text = "Talent Numbers：" + Save.Player.Talent.Exp;
 
 			var list = Save.Player.Talent.DataCollection;
 			_updater.OnListUpdate<TalentStatus>(list, delegate (TalentStatus status, GameObject block)

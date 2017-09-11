@@ -29,7 +29,7 @@ namespace UI.Main
 		public void UpdateData(TalentStatus status)
 		{
 			_status = status;
-			_levelDescTxt.text = status.Settings.Level + "级天赋";
+			_levelDescTxt.text = status.Settings.Level + "Level Talent";
 			_icon.sprite = status.Settings.Icon;
 			_nameTxt.text = status.Settings.DisplayName;
 

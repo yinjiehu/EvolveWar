@@ -49,10 +49,10 @@ namespace UI.Battle
 			var resultExp = 30f * (_victory ? 1 : 0.5f);
 			var rankExp = 22 - 2 * BattleScene.Instance.GetRankByUid(Save.Player.UID);
 			var killExp = 1.5f * BattleScene.Instance.GetKillNumByUid(Save.Player.UID);
-			_totalExpTxt.text = "本局获得总经验值：+" + (int)(resultExp + rankExp + killExp);
-			_resultExpTxt.text = (_victory ? "胜利：+" : "失败：+") + (int)resultExp;
-			_rankExpTxt.text = "排行：+" + (int)rankExp;
-			_killExpTxt.text = "击杀：+" + (int)killExp;
+			_totalExpTxt.text = "Total Exp：+" + (int)(resultExp + rankExp + killExp);
+			_resultExpTxt.text = (_victory ? "Victory：+" : "Failed：+") + (int)resultExp;
+			_rankExpTxt.text = "Ranking：+" + (int)rankExp;
+			_killExpTxt.text = "Kill：+" + (int)killExp;
 
 		}
 
