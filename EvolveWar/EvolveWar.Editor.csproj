@@ -250,10 +250,14 @@
     <Compile Include="Assets\iTween\PlayMaker\Editor\iTweenMoveToActionEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\EvolveWar\Excel\Xml\NickName.xml" />
-    <None Include="Assets\EvolveWar\Excel\Xml\PlayerSettings.xml" />
-    <None Include="Assets\EvolveWar\Excel\Xml\SkillSettings.xml" />
-    <None Include="Assets\EvolveWar\Excel\Xml\TalentSettings.xml" />
+    <None Include="Assets\EvolveWar\Excel\Xml\EN_US\NickName.xml" />
+    <None Include="Assets\EvolveWar\Excel\Xml\EN_US\PlayerSettings.xml" />
+    <None Include="Assets\EvolveWar\Excel\Xml\EN_US\SkillSettings.xml" />
+    <None Include="Assets\EvolveWar\Excel\Xml\EN_US\TalentSettings.xml" />
+    <None Include="Assets\EvolveWar\Excel\Xml\ZH_CN\NickName.xml" />
+    <None Include="Assets\EvolveWar\Excel\Xml\ZH_CN\PlayerSettings.xml" />
+    <None Include="Assets\EvolveWar\Excel\Xml\ZH_CN\SkillSettings.xml" />
+    <None Include="Assets\EvolveWar\Excel\Xml\ZH_CN\TalentSettings.xml" />
     <None Include="Assets\JsonDotNet\Assemblies\AOT\Newtonsoft.Json.XML" />
     <None Include="Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.XML" />
     <None Include="Assets\JsonDotNet\Assemblies\Windows\Newtonsoft.Json.XML" />
