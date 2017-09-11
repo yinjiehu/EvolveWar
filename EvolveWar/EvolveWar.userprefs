@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/EvolveWar/Data/PayMgr.cs">
+    <Files>
+      <File FileName="Assets/TalkingDataScripts/TalkingDataDemoScript.cs" Line="104" Column="5" />
+      <File FileName="Assets/TalkingDataScripts/TalkingDataGA.cs" Line="250" Column="4" />
+      <File FileName="Assets/EvolveWar/Data/SDKManager.cs" Line="18" Column="3" />
+      <File FileName="Assets/EvolveWar/Scripts/Protocols/RequestHelper/GameRequestHelper.cs" Line="168" Column="3" />
+      <File FileName="Assets/EvolveWar/Data/PayMgr.cs" Line="58" Column="43" />
+      <File FileName="Assets/EvolveWar/Scripts/UI/GiftPanel.cs" Line="17" Column="51" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
