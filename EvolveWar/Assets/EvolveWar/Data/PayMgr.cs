@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.InteropServices;
+using EvolveWar.RequestHelper;
 
 public class PayMgr : MonoBehaviour {
 
@@ -34,6 +35,7 @@ public class PayMgr : MonoBehaviour {
 	void ShowProductList(string s)
 	{
 		Debug.Log("获取product列表:" + s);
+		GameRequestHelper.Recharge ();
 	}
 
 	//获取商品回执

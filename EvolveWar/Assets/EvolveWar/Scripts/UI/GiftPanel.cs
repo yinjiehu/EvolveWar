@@ -14,7 +14,8 @@ public class GiftPanel : BasePanel
 
 	public void OnRechargeClick()
 	{
-		GameRequestHelper.Recharge();
+//		GameRequestHelper.Recharge();
+		PayMgr.Instance.BuyProductClick("evolvewaren_gift");
 		HidePanel();
 	}
 }
