@@ -35,13 +35,13 @@ public class PayMgr : MonoBehaviour {
 	void ShowProductList(string s)
 	{
 		Debug.Log("获取product列表:" + s);
-		GameRequestHelper.Recharge ();
 	}
 
 	//获取商品回执
 	void ProvideContent(string s)
 	{
 		Debug.Log("获取商品回执 : " + s);
+		GameRequestHelper.Recharge ();
 	}
 
 	void Start()

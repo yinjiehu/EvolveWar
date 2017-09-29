@@ -32,7 +32,7 @@ namespace Network.Http
 		}
 
 		[SerializeField]
-		string _url = "http://120.92.103.144:8888";
+		string _url = "http://www.gamebelief.com:8888";
 		//string _url = "http://localhost:8888";
 		public string Url { get { return _url; } }
 

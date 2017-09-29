@@ -130,17 +130,18 @@
     NSLog(@"%@",dic);
     if([dic[@"status"] intValue]==0){
         NSLog(@"购买成功！");
-        NSDictionary *dicReceipt= dic[@"receipt"];
-        NSDictionary *dicInApp=[dicReceipt[@"in_app"] firstObject];
-        NSString *productIdentifier= dicInApp[@"product_id"];//读取产品标识
-        //如果是消耗品则记录购买数量，非消耗品则记录是否购买过
-        NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
-        if ([productIdentifier isEqualToString:@"123"]) {
-            int purchasedCount=[defaults integerForKey:productIdentifier];//已购买数量
-            [[NSUserDefaults standardUserDefaults] setInteger:(purchasedCount+1) forKey:productIdentifier];
-        }else{
-            [defaults setBool:YES forKey:productIdentifier];
-        }
+        UnitySendMessage("PayMgr", "ProvideContent", "");
+//        NSDictionary *dicReceipt= dic[@"receipt"];
+//        NSDictionary *dicInApp=[dicReceipt[@"in_app"] firstObject];
+//        NSString *productIdentifier= dicInApp[@"product_id"];//读取产品标识
+//        //如果是消耗品则记录购买数量，非消耗品则记录是否购买过
+//        NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+//        if ([productIdentifier isEqualToString:@"123"]) {
+//            int purchasedCount=[defaults integerForKey:productIdentifier];//已购买数量
+//            [[NSUserDefaults standardUserDefaults] setInteger:(purchasedCount+1) forKey:productIdentifier];
+//        }else{
+//            [defaults setBool:YES forKey:productIdentifier];
+//        }
         //在此处对购买记录进行存储，可以存储到开发商的服务器端
     }else{
         NSLog(@"购买失败，未通过验证！");
