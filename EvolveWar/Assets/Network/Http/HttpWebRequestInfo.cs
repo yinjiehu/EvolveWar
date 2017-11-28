@@ -33,7 +33,9 @@ namespace Network.Http
 		public Type ReturnType { set; get; }
 		public bool ReturnRawJsonStr { set; get; }
 		public bool ShouldSetToken { set; get; }
-		public string Url { set; get; }
+		public string Host { set; get; }
+		public string Port { set; get;}
+		public string UrlParamters { set; get;}
 		public object SendData { set; get; }
 
 		public Component Caller { set; get; }

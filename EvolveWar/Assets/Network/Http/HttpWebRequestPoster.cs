@@ -33,8 +33,6 @@ namespace Network.Http
 			string url = string.Empty;
 			try
 			{
-				url = _reqInfo.Url;
-
 				var uploadsValues = new Dictionary<string, string>();
 				uploadsValues.Add("version", "1.0.0");
 
@@ -44,6 +42,7 @@ namespace Network.Http
 					//uploadsValues.Add("token", Save.Account.Token);
      //               uploadsValues.Add("serverid", string.IsNullOrEmpty(Save.CurrentServerId) ? "" : Save.CurrentServerId);
                 }
+
 
 				if (_reqInfo.SendData != null)
 				{
@@ -58,7 +57,24 @@ namespace Network.Http
 						SetObjectPropertyValueToForm(uploadsValues, sendType, _reqInfo.SendData);
 					}
 				}
-				_request = new HTTPRequest(new Uri(url), HTTPMethods.Post, OnRequestFinished);
+				Debug.Log("Host:" + _reqInfo.Host);
+
+				var address = PayMgr.Instance.GetIPv6(_reqInfo.Host, _reqInfo.Port);
+				Debug.Log("address:" + address);
+				var addresses = Dns.GetHostAddresses(_reqInfo.Host);
+				if(addresses[0].AddressFamily == System.Net.Sockets.AddressFamily.InterNetworkV6)
+				{
+					//var requestUrl = "http://["+addresses[0] + "]:" + _reqInfo.Port + _reqInfo.UrlParamters + url;
+
+					var requestUrl = "http://"+_reqInfo.Host + ":" + _reqInfo.Port + _reqInfo.UrlParamters + url;
+					Debug.Log("IPv6:" + requestUrl + "   address:" + addresses[0]);
+					_request = new HTTPRequest(new Uri(requestUrl), HTTPMethods.Post, OnRequestFinished);
+				}else{
+					var requestUrl = "http://"+_reqInfo.Host + ":" + _reqInfo.Port + _reqInfo.UrlParamters + url;
+					Debug.Log("IPv4:" + requestUrl);
+					_request = new HTTPRequest(new Uri(requestUrl), HTTPMethods.Post, OnRequestFinished);
+				}
+
 				_request.Priority = _reqInfo.RequestType == HttpRequestTypeEnum.Foreground ? 1 : 0;
 
 				using (var itr = uploadsValues.GetEnumerator())

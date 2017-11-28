@@ -1,17 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Best HTTP (Pro)/BestHTTP/HTTPRequest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Network/Http/HttpClient.cs">
     <Files>
-      <File FileName="Assets/Best HTTP (Pro)/Examples/SampleSelector.cs" Line="1" Column="1" />
-      <File FileName="Assets/Network/Http/HttpClient.cs" Line="53" Column="28" />
-      <File FileName="Assets/EvolveWar/Data/PayMgr.cs" Line="1" Column="1" />
+      <File FileName="Assets/Network/Http/HttpClient.cs" Line="35" Column="19" />
       <File FileName="Assets/EvolveWar/Data/SDKManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/TalkingDataScripts/TalkingDataDemoScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/EvolveWar/Scripts/Utility/GameCenterManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/EvolveWar/Data/PayMgr.cs" Line="1" Column="1" />
+      <File FileName="Assets/Network/Http/HttpWebRequestPoster.cs" Line="1" Column="1" />
+      <File FileName="Assets/Network/Http/HttpWebRequestInfo.cs" Line="1" Column="1" />
+      <File FileName="Assets/Network/Http/Protocols/Protocol.cs" Line="1" Column="1" />
+      <File FileName="Assets/Best HTTP (Pro)/BestHTTP/PlatformSupport/TcpClient/TcpClient.cs" Line="1" Column="1" />
       <File FileName="Assets/EvolveWar/Scripts/Protocols/RequestHelper/GameRequestHelper.cs" Line="1" Column="1" />
-      <File FileName="Assets/EvolveWar/Scripts/UI/GiftPanel.cs" Line="1" Column="1" />
-      <File FileName="Assets/Network/Http/HttpWebRequestInfo.cs" Line="28" Column="2" />
-      <File FileName="Assets/Network/Http/HttpWebRequestPoster.cs" Line="61" Column="23" />
-      <File FileName="Assets/Best HTTP (Pro)/BestHTTP/HTTPRequest.cs" Line="556" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

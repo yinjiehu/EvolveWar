@@ -19,7 +19,13 @@ namespace UI.Main
 		public void OnBeginGameClick()
 		{
 			EffectSoundMgr.Instance.PlayClickSound();
-			GameRequestHelper.Login (Account.PlayerID, delegate {
+			GameCenterManager.Instance.GameCenterLogin (GameCenterCallback);
+
+		}
+
+		void GameCenterCallback(string gcid)
+		{
+			GameRequestHelper.Login (gcid, delegate {
 				HidePanel();
 				if(string.IsNullOrEmpty(Save.Player.NickName))
 				{

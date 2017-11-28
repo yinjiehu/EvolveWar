@@ -17,7 +17,10 @@ namespace Model
 		[JsonProperty]
 		string _uid;
 		public string UID { get { return _uid; } }
-
+		[SerializeField]
+		[JsonProperty]
+		bool _isGetGift;
+		public bool IsGetGift { get { return _isGetGift; } }
 		[SerializeField]
 		[JsonProperty]
 		int _exp;
@@ -67,8 +70,14 @@ namespace Model
 			}
 		}
 
+		public void ResetGift()
+		{
+			_isGetGift = true;
+		}
+
 		public void Recharge()
 		{
+			_isGetGift = true;
 			SetExp(30 * 100);
 			_talent.TalentReset();
 			_talent.SetExp(30);

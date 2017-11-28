@@ -165,8 +165,7 @@
                 break;
             case SKPaymentTransactionStateRestored:{
                 NSLog(@"已经购买过商品");
-                
-                [[SKPaymentQueue defaultQueue] finishTransaction:tran];
+                UnitySendMessage("PayMgr", "ProvideContent", "");
             }
                 break;
             case SKPaymentTransactionStateFailed:{
@@ -197,6 +196,8 @@
 -(void) restoreTransaction:(SKPaymentTransaction *)transaction{
     NSLog(@"Restore transaction : %@",transaction.transactionIdentifier);
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+    
+    UnitySendMessage("PayMgr", "ProvideContent", "");
 }
 
 

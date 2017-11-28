@@ -6,6 +6,7 @@ using UnityEngine.SocialPlatforms.GameCenter;
 
 using System.Collections;
 using System;
+using UI.Main;
 
 
 
@@ -28,13 +29,24 @@ public class GameCenterManager : MonoBehaviour {
 	{
 		_instance = this;
 	}
-
+	bool _authenticated = false;
 	Action<string> _callback;
 
 	public void GameCenterLogin(Action<string> callback)
 	{
+		if (_authenticated) {
+			Account.LoadAccount ();
+			Account.LoadGift ();
+			callback (Account.PlayerID);
+			return;
+		}
+		_authenticated = true;
+		#if UNITY_EDITOR
+		callback.Invoke("111");
+		#else
 		_callback = callback;
 		Social.localUser.Authenticate(HandleAuthenticated);
+		#endif
 	}
 
 
@@ -43,20 +55,24 @@ public class GameCenterManager : MonoBehaviour {
 	private void HandleAuthenticated(bool success)
 
 	{
-
 		Debug.Log("*** HandleAuthenticated: success = " + success);
 
 		if (success) {
 			if (_callback != null)
-				_callback.Invoke (Social.localUser.id);
+				_callback.Invoke (Social.localUser.id.Replace (':', '_'));
 			
 
+			Debug.Log ("*** HandleAuthenticated: Social.localUser.id = " + Social.localUser.id);
 			//Social.localUser.LoadFriends(HandleFriendsLoaded);
 
 			//Social.LoadAchievements(HandleAchievementsLoaded);
 
 			//Social.LoadAchievementDescriptions(HandleAchievementDescriptionsLoaded);
 
+		} else {
+			DialogPanel.ShowDialogMessage ("Failed to Authenticate player.", delegate {
+				PayMgr.Instance.CallIosSetting();
+			});
 		}
 
 	}

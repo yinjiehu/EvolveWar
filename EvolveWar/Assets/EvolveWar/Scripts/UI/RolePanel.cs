@@ -37,8 +37,7 @@ namespace UI.Main
 			_levelTxt.text = "Lv." + (int)Save.Player.Level;
 			_levelSlider.value = Save.Player.Level - Mathf.FloorToInt(Save.Player.Level);
 
-			var gift = PlayerPrefs.GetInt("GiftValue", 0);
-			_rechargeBtn.SetActive(gift == 0);
+			_rechargeBtn.SetActive(!Save.Player.IsGetGift && Account.IsGift());
 		}
 
 		public void OnRankClick()

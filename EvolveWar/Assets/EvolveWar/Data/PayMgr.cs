@@ -31,9 +31,16 @@ public class PayMgr : MonoBehaviour {
 	[DllImport("__Internal")]
 	private static extern void BuyProduct(string s);//购买商品
 
+	[DllImport("__Internal")]
+	private static extern string getIPv6(string mHost, string mPort);  
+
+	[DllImport("__Internal")]
+	private static extern void callIOSSetting();  
+
 	//获取product列表
 	void ShowProductList(string s)
 	{
+		
 		Debug.Log("获取product列表:" + s);
 	}
 
@@ -50,6 +57,15 @@ public class PayMgr : MonoBehaviour {
 		InitIAPManager();
 	}
 
+	public void CallIosSetting()
+	{
+		callIOSSetting ();
+	}
+
+	public string GetIPv6(string mHost, string mPort)
+	{
+		return getIPv6 (mHost, mPort);
+	}
 
 	/// <summary>
 	/// 购买商品

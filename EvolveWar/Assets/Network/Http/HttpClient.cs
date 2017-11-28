@@ -32,10 +32,13 @@ namespace Network.Http
 		}
 
 		[SerializeField]
-		string _url = "http://www.gamebelief.com:8888";
+		string _host = "www.gamebelief.com";
 		//string _url = "http://localhost:8888";
-		public string Url { get { return _url; } }
+		public string Host { get { return _host; } }
 
+		[SerializeField]
+		string _port = "8888";
+		public string Port { get { return _port; }}
 
 		void OnDestroy()
 		{
@@ -60,11 +63,11 @@ namespace Network.Http
 
 			if(request.RequestType == HttpRequestTypeEnum.Foreground && _currentForground != null)
 			{
-				Debug.LogError("Only one foreground http request can be sended at the same time." + request.Url);
+				Debug.LogError("Only one foreground http request can be sended at the same time." + request.Host);
 				return;	
 			}
 			_toSendRequest.Enqueue(request);
-			Debug.Log("start send request " + request.Url);
+			Debug.Log("start send request " + request.Host + " Port " + request.Port);
 
 			if (request.RequestType == HttpRequestTypeEnum.Foreground)
 				_currentForground = request;
@@ -160,17 +163,17 @@ namespace Network.Http
 
 				if (customCode == ErrCode.D0000S.Code)
 				{
-					Debug.LogFormat("{0} 401, Need update. {1} . ", reqInfo.Url, customCode);
+					Debug.LogFormat("{0} 401, Need update. {1} . ", reqInfo.Host, customCode);
 					reqInfo.OnClientVersionError(reqInfo);
 				}
 				else if (customCode == ErrCode.G0001S.Code)
 				{
-					Debug.LogFormat("{0} 401 Server not started {1} . ", reqInfo.Url, customCode);
+					Debug.LogFormat("{0} 401 Server not started {1} . ", reqInfo.Host, customCode);
 					reqInfo.OnHttp404Error(reqInfo);
 				}
 				else
 				{
-					Debug.LogFormat("{0} 401 {1} . ", reqInfo.Url, customCode);
+					Debug.LogFormat("{0} 401 {1} . ", reqInfo.Host, customCode);
 					reqInfo.OnHttp401Error(reqInfo);
 				}
 			}
@@ -184,11 +187,11 @@ namespace Network.Http
 		{
 			if (string.IsNullOrEmpty(customStatusCode))
 			{
-				Debug.LogErrorFormat("Request {0} has no custom status code", reqInfo.Url);
+				Debug.LogErrorFormat("Request {0} has no custom status code", reqInfo.Host);
 			}
 			else
 			{
-				Debug.LogErrorFormat("Request {0} has custom error: {1} ", reqInfo.Url, customStatusCode);
+				Debug.LogErrorFormat("Request {0} has custom error: {1} ", reqInfo.Host, customStatusCode);
 
 				var codes = customStatusCode.Split(';');
 				if (codes.Length > 1)
@@ -210,7 +213,7 @@ namespace Network.Http
 				else
 				{
 					o = JsonUtilNet.Deserialize(jsonData, request.ReturnType);
-					Debug.LogFormat("receive data from {0} \n {1}", request.Url, jsonData);
+					Debug.LogFormat("receive data from {0} \n {1}", request.Host, jsonData);
 				}
             }
             catch (Exception e)

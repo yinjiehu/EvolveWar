@@ -25,11 +25,12 @@ namespace Network.Http.Protocols
 			{
 				throw new UnityEngine.UnityException("ProtocolManager has not been initialized!");
 			}
-			var url = HttpClient.Instance.Url + "/" + SubUrl;
-
+			var host = HttpClient.Instance.Host;
 			var req = new HttpWebRequestInfo();
 			req.ShouldSetToken = CheckToken;
-			req.Url = url;
+			req.Host = host;
+			req.Port = HttpClient.Instance.Port;
+			req.UrlParamters = "/" + SubUrl;
 			req.ReturnType = ReturnType;
 			
 			req.OnClientVersionError = OnClientVersionError;

@@ -85,10 +85,10 @@ public class TalkingDataDemoScript : MonoBehaviour {
 			UnityEngine.iOS.NotificationType.Badge |
 			UnityEngine.iOS.NotificationType.Sound);
 #else
-		NotificationServices.RegisterForRemoteNotificationTypes(
-			RemoteNotificationType.Alert |
-			RemoteNotificationType.Badge |
-			RemoteNotificationType.Sound);
+		UnityEngine.iOS.NotificationServices.RegisterForNotifications(
+			UnityEngine.iOS.NotificationType.Alert |
+			UnityEngine.iOS.NotificationType.Badge |
+			UnityEngine.iOS.NotificationType.Sound);
 #endif
 #endif
 		TalkingDataGA.OnStart("0A33A9FA393A4EC898A788FC293DDD94", "your_channel_id");

@@ -221,7 +221,7 @@ public class TalkingDataGA {
 #else
 	public static void SetDeviceToken() {
 		if (!hasTokenBeenObtained) {
-			byte[] byteToken = NotificationServices.deviceToken;
+			byte[] byteToken = UnityEngine.iOS.NotificationServices.deviceToken;
 			if(byteToken != null) {
 				string deviceToken = System.BitConverter.ToString(byteToken).Replace("-","");
 				tdgaSetDeviceToken(deviceToken);
@@ -231,10 +231,10 @@ public class TalkingDataGA {
 	}
 
 	public static void HandlePushMessage() {
-		RemoteNotification[] notifications = NotificationServices.remoteNotifications;
+		UnityEngine.iOS.RemoteNotification[] notifications = UnityEngine.iOS.NotificationServices.remoteNotifications;
 		if (notifications != null) {
-			NotificationServices.ClearRemoteNotifications();
-			foreach (RemoteNotification rn in notifications) {
+			UnityEngine.iOS.NotificationServices.ClearRemoteNotifications();
+			foreach (UnityEngine.iOS.RemoteNotification rn in notifications) {
 				foreach (DictionaryEntry de in rn.userInfo) {
 					if (de.Key.ToString().Equals("sign")) {
 						string sign = de.Value.ToString();
